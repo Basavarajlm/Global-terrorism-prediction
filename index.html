@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>Terror</title>
+    <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
+  </head>
+  <style>
+    body{
+      margin-top: 64px;
+    }
+  </style>
+  <body class="bg-light bg-image"
+  style="
+    background-image: url('');
+    background-position: center top;
+    background-size: 100% auto;
+  ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 order-md-1">
+          <h1 style="color: rgb(49, 0, 247); text-align: center;" class="mb-3">Global Terrorism</h1>
+          <form class="needs-validation" method="post">
+          <div class="row">
+            <div class="col-md-2 mb-3">
+              <strong><label for="">Year</label></strong>
+              <div class="input-group">
+                <input style="border-radius: 10px;" type="text" class="form-control" name="year" placeholder="text_input" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Enter 
+                </div>
+              </div>
+             </div>
+
+             <div class="col-md-2 mb-3">
+              <strong><label for="">Day</label></strong>
+              <div class="input-group">
+                <input style="border-radius: 10px;" type="text" class="form-control" name="day" placeholder="text_input" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Enter 
+                </div>
+              </div>
+             </div>
+
+             <div class="col-md-2 mb-3">
+              <strong><label for="">Attack Type</label></strong>
+              <div class="input-group">
+                <input style="border-radius: 10px;" type="text" class="form-control" name="attack" placeholder="text_input" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Enter
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 mb-3">
+              <strong><label for="">Target Type</label></strong>
+              <div class="input-group">
+                <input style="border-radius: 10px;" type="text" class="form-control" name="target" placeholder="tex_input" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Enter
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 mb-3">
+              <strong><label for="">nation</label></strong>
+              <div class="input-group">
+                <input style="border-radius: 10px;" type="text" class="form-control" name="nation" placeholder="text_input" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Enter
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 mb-3">
+              <strong><label for="">Weapon Type</label></strong>
+              <div class="input-group">
+                <input style="border-radius: 10px;" type="text" class="form-control" name="weapon" placeholder="text_input" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Enter
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2 mb-3">
+              <strong><label for="">nkill</label></strong>
+              <div class="input-group">
+                <input style="border-radius: 10px;" type="text" class="form-control" name="nkill" placeholder="text_input" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Enter 
+                </div>
+              </div>
+             </div>
+
+             <div class="col-md-2 mb-3">
+              <strong><label for="">extended</label></strong>
+              <div class="input-group">
+                <input style="border-radius: 10px;" type="text" class="form-control" name="extended" placeholder="text_input" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Enter 
+                </div>
+              </div>
+             </div>
+
+             <div class="col-md-2 mb-3">
+              <strong><label for="">country</label></strong>
+              <div class="input-group">
+                <input style="border-radius: 10px;" type="text" class="form-control" name="country" placeholder="text_input" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Enter
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 mb-3">
+              <strong><label for="">region</label></strong>
+              <div class="input-group">
+                <input style="border-radius: 10px;" type="text" class="form-control" name="region" placeholder="text_input" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Enter
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 mb-3">
+              <strong><label for="">latitude</label></strong>
+              <div class="input-group">
+                <input style="border-radius: 10px;" type="text" class="form-control" name="latitude" placeholder="text_input" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Enter
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 mb-3">
+              <strong><label for="">longitude</label></strong>
+              <div class="input-group">
+                <input style="border-radius: 10px;" type="text" class="form-control" name="longitude" placeholder="text_input" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Enter
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-2 mb-3">
+              <strong><label for="">specificity</label></strong>
+              <div class="input-group">
+                <input style="border-radius: 10px;" type="text" class="form-control" name="specificity" placeholder="text_input" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Enter 
+                </div>
+              </div>
+             </div>
+
+             <div class="col-md-2 mb-3">
+              <strong><label for="">vicinity</label></strong>
+              <div class="input-group">
+                <input style="border-radius: 10px;" type="text" class="form-control" name="vicinity" placeholder="text_input" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Enter 
+                </div>
+              </div>
+             </div>
+
+             <div class="col-md-2 mb-3">
+              <strong><label for="">crit1</label></strong>
+              <div class="input-group">
+                <input style="border-radius: 10px;" type="text" class="form-control" name="crit1" placeholder="text_input" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Enter
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 mb-3">
+              <strong><label for="">suicide</label></strong>
+              <div class="input-group">
+                <input style="border-radius: 10px;" type="text" class="form-control" name="suicide" placeholder="text_input" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Enter
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 mb-3">
+              <strong><label for="">nperps</label></strong>
+              <div class="input-group">
+                <input style="border-radius: 10px;" type="text" class="form-control" name="nperps" placeholder="text_input" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Enter
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          
+            <div class="col-md-4 mb-3">
+            <button class="btn btn-primary btn-lg btn-block" type="form">Predict</button>
+            </div>
+            <hr class="mb-3">
+           <strong><h2 class="result"style="text-align: center;">{{ value }}</h2></strong>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    if(document.querySelector(".result").innerText)
+    {
+      console.log("results fetched")
+    }
+  </script>
+</html>
